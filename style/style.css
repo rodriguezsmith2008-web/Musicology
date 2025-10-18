@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+
+}
+
 
 nav {
   background-color: rgba(0, 0, 0, 0.822);
@@ -27,11 +32,16 @@ nav {
   margin-top: 30px;
 }
 
+main {
+  width: 100%;
+}
+
 
 .Fondo {
   background-image: url(../assets/images/background.png);
   background-size: cover;
-  background-position: center;
+  background-position: top center;
+  background-repeat: no-repeat;
   height: 700px;
   width: 100%;
   display: flex;
@@ -257,4 +267,556 @@ footer {
   justify-content: center;
   color: white;
   font-family: Montserrat, sans-serif;
+}
+
+@media (max-width: 1300px) {
+
+  .Continentes,
+  .planes {
+    width: 100%;
+    max-width: 1000px;
+
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .danza,
+  .plan {
+    width: 35%;
+  }
+
+  .info2,
+  .info4 {
+    width: 90%;
+  }
+
+  .Fondo {
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+
+
+  }
+}
+
+
+@media (max-width:1050px) {
+
+  .danza,
+  .plan {
+    width: 30%;
+  }
+
+  .Fondo {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+
+  }
+
+  .logo {
+    width: 90px;
+    height: 70px;
+
+  }
+
+  .info {
+    width: 40%;
+    font-size: 5px;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .info h1 {
+    font-size: 40px;
+  }
+
+  .info button {
+
+
+    font-size: 25px;
+    width: 250px;
+    height: 55px;
+  }
+
+}
+
+@media (max-width:800px) {
+
+
+  .plan img {
+    height: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .info button {
+    font-size: 20px;
+    width: 220px;
+    height: 50px;
+
+
+  }
+
+
+}
+
+@media (max-width:768px) {
+
+
+  .logo {
+    width: 60px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+
+
+  .busca {
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  nav {
+    height: 60px;
+    justify-content: space-between;
+  }
+
+  .info {
+    width: 40%;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 40px;
+  }
+
+  .info h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .info p {
+    font-size: 15px;
+  }
+
+  .infobutton {
+
+
+    font-size: 15px;
+    width: 150px;
+    height: 35px;
+  }
+
+  .info2 {
+    color: white;
+    width: 400px;
+    height: 100px;
+    padding-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .info2 h1 {
+    font-family: oswald, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    transform: scaleY(1);
+    transform: scalex(0.4);
+  }
+
+  .info2 p {
+    width: 100%;
+    margin-top: 10px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .principal {
+    height: 500px;
+  }
+
+  .Continentes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: 600px;
+  }
+
+  .danza {
+    width: 250px;
+    height: 150px;
+  }
+
+  .danza img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .info3 {
+    padding: 15px;
+    color: white;
+    background-color: rgba(41, 41, 41, 0.973);
+
+  }
+
+  .info3 h1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform: scaleY(1.5);
+  }
+
+  .info3 p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+
+  .info4 {
+    color: white;
+    width: 600px;
+    height: 140px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .info4 h1 {
+    font-family: oswald, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    transform: scaleY(1);
+    transform: scalex(0.4);
+  }
+
+  .info4 p {
+    width: 100%;
+    margin-top: 15px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .planes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 800px;
+    width: 600px;
+
+  }
+
+  .plan {
+    width: 180px;
+    height: 300px;
+    background-color: rgb(255, 102, 0);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .plan img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    background-position: center;
+    margin-bottom: 15px;
+  }
+
+  .plan h1 {
+    font-size: 18px;
+    font-family: oswald, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    transform: scaleY(1.9);
+  }
+
+  .plan p {
+    font-size: 15px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .plan button {
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    background-color: rgba(41, 41, 41);
+    width: 100%;
+  }
+
+  aside {
+    height: 600px;
+  }
+
+  footer {
+    height: 60px;
+    font-size: 15px;
+  }
+
+}
+
+@media(max-width:610px) {
+
+
+  .Continentes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: 500px;
+    margin: 0px;
+  }
+
+  .danza {
+    width: 180px;
+    height: 150px;
+  }
+
+
+  .info button {
+    font-size: 15px;
+    width: 180px;
+    height: 40px;
+
+  }
+
+  .plan {
+    width: 150px;
+    height: 300px;
+    background-color: rgb(255, 102, 0);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .planes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 800px;
+    width: 500px;
+
+  }
+
+  .info3 {
+    padding: 10px;
+  }
+
+  .info4 {
+    width: 500px;
+  }
+
+}
+
+@media(max-width:500px) {
+
+
+  .Continentes {
+
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 450px;
+    margin: 20px;
+  }
+
+  .danza {
+    width: 170px;
+    height: 150px;
+  }
+
+
+  .info button {
+    font-size: 14px;
+    width: 170px;
+    height: 40px;
+    margin-top: 17px;
+
+  }
+
+  .info p {
+    font-size: 12px;
+  }
+
+  .info3 p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .plan {
+    width: 120px;
+    height: 300px;
+    background-color: rgb(255, 102, 0);
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .planes {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    height: 800px;
+    width: 400px;
+
+  }
+
+  .plan p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+
+  .plan h1 {
+    font-size: 14px;
+    font-family: oswald, sans-serif;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 25px;
+    margin-top: 10px;
+    transform: scaleY(1.9);
+  }
+
+
+  .info3 {
+    padding: 10px;
+  }
+
+  .info4 {
+    width: 400px;
+    
+  }
+
+  .info4 p{
+    font-size: 17px;
+  }
+
+}
+
+@media(max-width:480px) {
+
+.Fondo{
+  height: 400px;
+}
+.info{
+  margin-top: 80px;
+}
+
+.Continentes{
+  height: 330px;
+  width: 420px;
+}
+
+.danza{
+  width: 125px;
+}
+
+.principal{
+  height: 450px;
+}
+
+aside{
+  height: 500px;
+}
+
+.info4{
+  padding: 15px;
+  margin: 0px 0px 30px;
+  width: 400px;
+  font-size: 15px;
+}
+
+
+.info4 h1{
+
+  font-size: 60px;
+}
+.info4 p{
+
+margin: 5px;
+
+}
+
+.planes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 300px;
+
+}
+
+.plan {
+  background-color: rgb(255, 102, 0);
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.plan img {
+
+  background-position: center;
+  width:30px ;
+  height:30px ;
+  margin: 10px 7px 3px 7px;
+
+}
+
+.plan h1 {
+
+  font-family: oswald, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform: scaleY(1.5);
+}
+
+.plan p {
+
+  font-family: Montserrat, sans-serif;
+}
+
+.plan button {
+  font-size: 13px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(41, 41, 41);
+  width: 100%;
+}
+
+footer{
+  font-size: 13px;
+}
+
+
+
 }
